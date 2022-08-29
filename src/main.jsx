@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Interface from './interface'
-import './index.css'
+import { useState } from 'react'
+import './css/main.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Interface />
-  </React.StrictMode>
-)
+function Main() {
+  const [count, setCount] = useState(0)
+
+  return (
+  <main>
+<h2>Main</h2>
+  </main>
+  )
+}
+
+export default Main

@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import './interface.css'
+import './css/aside.css'
 
-function Interface() {
+function Aside() {
   const [count, setCount] = useState(0)
 
   return (
    <div>
-    
+        <h1>aside</h1>
    </div>
   )
 }
 
-export default Interface
+export default Aside
