@@ -62,3 +62,34 @@ background: url();
 border: 2px solid #00FF00;
 border-radius: 100%;
 }
+
+div.contact a {
+text-decoration: none;
+color: var(--text-color);
+
+}
+div.contact ul {
+  margin: 3rem auto 0 4rem;
+ align-items: left;
+  list-style: none;
+
+}
+
+div.contact ul li {
+ display: flex;
+ gap: 2rem;
+ font-size: 1.3rem;
+ font-weight: 400;
+ align-items: center;
+ margin-bottom: 3rem;
+ 
+ 
+}
+
+#contactFrase{
+  font-weight: bold;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+div.contact i
