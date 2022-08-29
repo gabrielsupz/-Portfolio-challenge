@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './css/aside.css'
+import './styles/aside.css'
 
 
 function Aside() {
