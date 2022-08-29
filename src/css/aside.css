@@ -3,4 +3,62 @@
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
+
+  font-size: 62.5%; 
+  /* 1rem = 10px */
+}
+* {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+ font-family: 'Merriweather Sans', sans-serif;
+}
+aside{
+  width: 44.8rem;
+}
+
+aside div{
+  width: 34.8rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 6rem;
+  color: var(--text-color);
+  background-color: var(--bg-cards);
+  display: flex;
+  border-radius: 5%;
+}
+
+div.profile {
+  margin-top: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+  flex-direction: column;
+
+  
+ 
+}
+
+div.profile h1 {
+ font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+div.profile h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 4.9rem;
+}
+
+div.profile p.profilePic{
+width: 12.8rem;
+height: 12.8rem;
+left: 15rem;
+top: 7.2rem;
+margin-top: 3.2rem;
+
+margin-bottom: 3rem;
+
+background: url();
+border: 2px solid #00FF00;
+border-radius: 100%;
 }
