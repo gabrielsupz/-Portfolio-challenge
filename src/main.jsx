@@ -10,21 +10,28 @@ function Main() {
       <h3>My Projects</h3>
       <a href="https://github.com/SuptitzGabriel" target="blank">Veja todos</a>
     </div>
-    
-      <div className='projects'>
+    <div className='projects'>
+      <div>
           <div className='project projectOne'>
           <div className='nameProject'>
              <img src="../public/assets/folder.svg" alt="Ícon Folder" /><h4>-Portfolio-challenge</h4></div>  
              <p>Desafio da rockeseat,realizado com intuito de aprender mais sobre html e css,feito em react para treino.</p>
           <div>
             <div className='infoProject'>
-              <img src="../public/assets/git-branch.svg" alt="Ícon Git Branch" />
-              <p>1</p>
-              <img src="../public/assets/star-project.svg" alt="Ícon Star" />
-              <p>1</p>
-               </div>
-                   <p></p>
-                 </div>
+              <div className='infoGitHub'>   
+                <img src="../public/assets/git-branch.svg" alt="Ícon Git Branch" />
+                <p>001</p>
+                <img src="../public/assets/star-project.svg" alt="Ícon Star" />
+                <p>001</p>
+              </div>
+           
+              <div className='projectTec'>
+                <p className='elipse'></p>
+                <p>JavaScript</p>
+              </div>
+            </div>
+               
+             </div>
               </div>
              <div className='project projectTwo'>
             <h4>-Portfolio-challenge</h4>
@@ -44,7 +51,7 @@ function Main() {
 
       </div>
      </div>
-    
+    </div>
     <div className='recentPost'>
       <h3>Recent Posts</h3>
     </div>

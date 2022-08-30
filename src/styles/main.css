@@ -107,8 +107,34 @@ div.projects div.project p{
 font-size: 1.4rem;
 }
 
+ div.infoProject{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  width: 46.1rem;
+}
 
+div.infoGitHub img{
+  margin-right: 0.8rem;
+}
+div.infoGitHub p{
+  margin-right: 1.6rem;
+}
 
+div.projectTec{
+  align-items: center;
+  gap: 0.8rem;
+
+}
+p.elipse{
+  width: 1.5rem;
+height: 1.5rem;
+
+border-radius: 100%;
+background: #E7DE79;
+border: 2px solid #837E9F;
+
+}
 
 div.recentPost{
   background-color: var(--bg-cards);
