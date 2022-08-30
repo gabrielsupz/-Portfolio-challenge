@@ -41,7 +41,7 @@ main div ul {
 
 div.myProject{
   margin: 4rem 4rem 3rem 0;
-  width: 95.2rem;
+  width: 94.2rem;
   height: 8.6rem;
 
   align-items: center;
@@ -78,7 +78,7 @@ margin-bottom: 3rem;
 
 }
 div.projects div.project{
-  width: 46.1rem;
+  width: 45.1rem;
 height: 18.6rem;
 flex-direction: column;
 background-color: var(--bg-cards);
@@ -130,7 +130,7 @@ font-size: 1.4rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   justify-content: space-between;
-  width: 46.1rem;
+  width: 45.1rem;
 }
 
 div.infoGitHub {
@@ -175,13 +175,13 @@ border: 2px solid #837E9F;
 
 div.message{
   background-color: var(--bg-cards);
-  width: 95.2rem;
+  width: 94.2rem;
   height: 8.6rem;
   margin-bottom: 3rem;
 }
 
 div.textMessage{
-  width: 95.2rem;
+  width: 94.2rem;
 height: 20.1rem;
 padding: 3rem;
 gap: 2rem;

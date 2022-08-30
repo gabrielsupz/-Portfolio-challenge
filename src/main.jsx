@@ -94,7 +94,7 @@ function Main() {
        <strong>Olá,Tudo certo✌️ ?</strong>  
        <br />
        <br />
-Meu nome é Gabriel Suptitz estou no caminho para me tornar um programador e tentando alcançar sempre um próximo nível 🚀, este é um portifólio feito com base no desafio do discover da Rocketseat!
+Meu nome é Gabriel Suptitz estou no caminho para me tornar um programador e tentando alcançar sempre um próximo nível 🚀, este é um portifólio feito com base no desafio do discover da Rocketseat,mas com algumas preferências próprias!
 </p>
        
     </div>
