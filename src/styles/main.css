@@ -73,8 +73,8 @@ transition: 0.5s;
 
  main div.projects{
   display: flex;
-  flex-direction: column;
 background-color: var(--body-bg-color);
+margin-bottom: 3rem;
 
 }
 div.projects div.project{
@@ -82,8 +82,13 @@ div.projects div.project{
 height: 18.6rem;
 flex-direction: column;
 background-color: var(--bg-cards);
+padding: 3rem;
 }
 
+div.projects div.project img{
+  width: 2.0rem;
+  height: 2.0rem;
+}
 div.project h4{
   font-weight: 700;
   font-size: 1.6rem;
@@ -92,6 +97,16 @@ div.project h4{
 div.projects div.projectOne{
   margin-right: 3rem;
 }
+div.projects div.project div.nameProject{
+gap:1.7rem;
+margin-bottom: 2rem;
+}
+
+div.projects div.project p{
+  font-weight: 400;
+font-size: 1.4rem;
+}
+
 
 
 
