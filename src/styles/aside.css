@@ -14,14 +14,14 @@
  font-family: 'Merriweather Sans', sans-serif;
 }
 aside{
-  width: 44.8rem;
+  width: auto;
 }
 
 aside div{
-  width: 34.8rem;
+  width: 30rem;
   margin-left: 3rem;
   margin-bottom: 3rem;
-  margin-right: 6rem;
+  margin-right: 3rem;
   color: var(--text-color);
   background-color: var(--bg-cards);
   display: flex;
@@ -33,7 +33,6 @@ div h3 {
   margin: 3rem 0 0 2rem;
 }
 div.profile {
-  margin-top: 4rem;
   margin-top: 4rem;
   align-items: center;
   flex-direction: column;
@@ -102,9 +101,8 @@ div.tec h3{
 div.tec {
 display: flex;
 flex-direction: column;
-max-width: 348px;
-height: 208px;
-
+max-width: 34.8rem;
+height: 20.8rem;
 
 }
 div.tec div.technologies  {
@@ -114,10 +112,18 @@ div.tec div.technologies  {
   grid-area: auto;
   margin: 0;
   align-items: center;
-  padding: 0 3rem 0 3rem;
-
+  padding-left: 1rem;
   color: var(--body-bg-color);
+  margin-left: 0;
 
+  transition: 0,05s;
+
+
+}
+div.tec div.technologies a:hover{
+  transition: 0,5s;
+  background-color: #383647;
+  color: var(--text-color);
 }
 
 div.tec div.technologies a {
@@ -128,21 +134,16 @@ font-weight: 700;
 font-size: 1rem;
 line-height: 1.3rem;
 text-align: center;
-text-transform: uppercase;
+
 padding: 0.6rem 0.4rem 0.6rem 0.4rem;
  width: 8.6rem;
 height: 2.4rem; 
 align-items: center;
 margin-top: 1.5rem;
 color: black;
-
+text-transform: uppercase;
 }
 
-div.tec div.technologies a:hover{
-  transition: 0.2ms;
-  background-color: #383647;
-  color: var(--text-color);
-}
 
 
 div.exp,

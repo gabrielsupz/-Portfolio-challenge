@@ -12,5 +12,92 @@
   padding: 0;
  box-sizing: border-box;
  font-family: 'Merriweather Sans', sans-serif;
+ text-decoration: none;
+ color: var(--text-color);
 }
 
+
+
+
+main div {
+  color: var(--text-color);
+  display: flex;
+  
+  border-radius: 20px;
+
+
+}
+
+main div h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0 3rem 3rem;
+}
+
+main div ul {
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.myProject{
+  margin: 4rem 4rem 3rem 0;
+  width: 95.2rem;
+  height: 8.6rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  list-style: none;
+  color: var(--text-color);
+  background-color: var(--bg-cards);
+}
+
+div.myProject a{
+ font-size: 1.4rem;
+ margin-right: 3rem;
+
+ line-height: 1.3rem;
+text-align: center;
+
+padding: 0.8rem 0.5rem 0.7rem 0.8rem;
+
+border-radius: 7px;
+transition: 0.5s;
+
+}
+div.myProject a:hover{
+background-color: #383647;
+transition: 0.5s;
+
+}
+
+ main div.projects{
+  display: flex;
+  flex-direction: column;
+background-color: var(--body-bg-color);
+
+}
+div.projects div.project{
+  width: 46.1rem;
+height: 18.6rem;
+flex-direction: column;
+background-color: var(--bg-cards);
+}
+
+div.project h4{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+div.projects div.projectOne{
+  margin-right: 3rem;
+}
+
+
+
+div.recentPost{
+  background-color: var(--bg-cards);
+  width: 95.2rem;
+  height: 8.6rem;
+  
+}
