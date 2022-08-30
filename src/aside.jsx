@@ -40,8 +40,8 @@ function Aside() {
       <h3>Experiência</h3>
       <div>
         <ul>
-          <li><strong>Mared Têxtil</strong> 
-            <ul className='infoExp'>
+          <li><strong className='topic'>Mared Têxtil</strong> 
+            <ul className='infoLi'>
               <li>2021-2022</li>
               <li>Auxiliar de estoque.</li>
             </ul>
@@ -51,7 +51,21 @@ function Aside() {
       </div>
       
     </div>
-    <div className='education'><h3>Educação</h3></div>
+    <div className='education'><h3>Educação</h3>
+      <div>
+        <ul>
+          <li>
+            <strong className='topic'>Instituto Estadual Mathilde Zatar</strong> 
+            <ul className='infoLi'>
+              <li>
+                  2021-Atualmente
+              </li>
+            </ul>
+          
+          </li>
+        </ul>
+       </div>
+    </div>
    </aside>
   )
 }

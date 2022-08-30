@@ -25,7 +25,7 @@ aside div{
   color: var(--text-color);
   background-color: var(--bg-cards);
   display: flex;
-  border-radius: 5%;
+  border-radius: 7%;
 }
 div h3 {
   font-size: 2rem;
@@ -145,27 +145,30 @@ div.tec div.technologies a:hover{
 }
 
 
-div.exp {
+div.exp,
+div.education {
   display: flex ;
   flex-direction: column;
 }
 
 
-div.exp ul{
-font-size: 1.4rem;
 
 
-}
-div.exp ul.infoExp{
+
+
+div ul.infoLi{
   list-style: none;
+  font-size: 1.2rem;
 }
 
-div.exp ul strong{
-  font-size: 1.6rem;
+div ul strong.topic
+{
+  font-size: 1.4rem;
 font-weight: 700;
 }
 
-div.exp div{
+div.exp div,
+div.education div{
   margin: 2rem 0rem 4rem 4rem;
   width: auto;
 }
