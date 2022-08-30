@@ -89,10 +89,29 @@ div.projects div.project img{
   width: 2.0rem;
   height: 2.0rem;
 }
-div.project h4{
+div.nameProject{
+  align-items: center;
+}
+
+div.project a{
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 0.8rem 0.8rem 0.8rem;
+
+  border-radius: 7px;
+
+border-radius: 7px;
   font-weight: 700;
   font-size: 1.6rem;
+  transition: 0.5s;
 }
+div.project a:hover{
+transition: 0.5s;
+background-color:#383647 ;
+
+
+}
+
 
 div.projects div.projectOne{
   margin-right: 3rem;
@@ -114,11 +133,11 @@ font-size: 1.4rem;
   width: 46.1rem;
 }
 
-div.infoGitHub img{
-  margin-right: 0.8rem;
+div.infoGitHub {
+  gap: 1.6rem;
 }
-div.infoGitHub p{
-  margin-right: 1.6rem;
+div.infoGitHub div {
+  gap: 0.8rem;
 }
 
 div.projectTec{
@@ -126,7 +145,25 @@ div.projectTec{
   gap: 0.8rem;
 
 }
-p.elipse{
+p.elipseCss{
+  width: 1.5rem;
+height: 1.5rem;
+
+border-radius: 100%;
+background: #9747d1;
+border: 2px solid #837E9F;
+
+}
+p.elipseHtml{
+  width: 1.5rem;
+height: 1.5rem;
+
+border-radius: 100%;
+background: #a01717;
+border: 2px solid #837E9F;
+
+}
+p.elipseJs{
   width: 1.5rem;
 height: 1.5rem;
 
@@ -136,9 +173,36 @@ border: 2px solid #837E9F;
 
 }
 
-div.recentPost{
+div.message{
   background-color: var(--bg-cards);
   width: 95.2rem;
   height: 8.6rem;
+  margin-bottom: 3rem;
+}
+
+div.textMessage{
+  width: 95.2rem;
+height: 20.1rem;
+padding: 3rem;
+gap: 2rem;
+}
+div.textMessage p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  
+}
+p.messagePic{
+  width: 12.8rem;
+height: 12.8rem;
+
+background: url();
+border: 2px solid #00FF00;
+border-radius: 100%;
+
+}
+
+p strong {
+  font-size: 1.6;
+  font-weight: 700;
   
 }
