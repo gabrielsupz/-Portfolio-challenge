@@ -36,7 +36,21 @@ function Aside() {
         <a title='Clique para ir ao MDN sobre node' href='https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs' target="blank">NODEJS</a>
       </div>
     </div>
-    <div className='exp'><h3>Experiência</h3></div>
+    <div className='exp'>
+      <h3>Experiência</h3>
+      <div>
+        <ul>
+          <li><strong>Mared Têxtil</strong> 
+            <ul className='infoExp'>
+              <li>2021-2022</li>
+              <li>Auxiliar de estoque.</li>
+            </ul>
+
+          </li>
+        </ul>
+      </div>
+      
+    </div>
     <div className='education'><h3>Educação</h3></div>
    </aside>
   )

@@ -143,3 +143,29 @@ div.tec div.technologies a:hover{
   background-color: #383647;
   color: var(--text-color);
 }
+
+
+div.exp {
+  display: flex ;
+  flex-direction: column;
+}
+
+
+div.exp ul{
+font-size: 1.4rem;
+
+
+}
+div.exp ul.infoExp{
+  list-style: none;
+}
+
+div.exp ul strong{
+  font-size: 1.6rem;
+font-weight: 700;
+}
+
+div.exp div{
+  margin: 2rem 0rem 4rem 4rem;
+  width: auto;
+}
