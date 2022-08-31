@@ -1,15 +1,28 @@
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import './styles/aside.css'
 
 
-function Aside() {
-  const [count, setCount] = useState(0)
 
+function Aside() {
+const [user, setUser] = useState({ name: "" , avatar: ""})
+
+
+
+useEffect(() => {
+fetch("https://api.github.com/users/suptitzgabriel")
+.then(response => response.json() )
+.then(data => {
+  setUser({
+    name: data.name,
+    avatar: data.avatar_url
+  })
+})
+},[])
   return (
    <aside>
     <div className='profile'>
-    <p  className='profilePic'   />
-      <h1>Gabriel Suptitz</h1>
+   <img id="gitImage" className='profilePic' src={user.avatar} alt="Imagem de perfil" />
+      <h1>{user.name}</h1>
       <h2>Novice Developer</h2>
     </div>
     <div className='contact'>
@@ -68,6 +81,10 @@ function Aside() {
     </div>
    </aside>
   )
+
+
+ 
+
 }
 
 export default Aside

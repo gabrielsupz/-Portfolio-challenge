@@ -36,10 +36,7 @@ function Main() {
               <div className='projectTec'>
                 <p className='elipseJs'></p>
                 <p>JavaScript</p>
-                <p className='elipseHtml'></p>
-                <p>HTML</p>
-                <p className='elipseCss'></p>
-                <p>CSS</p>
+               
               </div>
             </div>
                
@@ -67,12 +64,10 @@ function Main() {
               </div>
            
               <div className='projectTec'>
-              <p className='elipseJs'></p>
-                <p>JavaScript</p>
+             
                 <p className='elipseHtml'></p>
                 <p>HTML</p>
-                <p className='elipseCss'></p>
-                <p>CSS</p>
+               
               </div>
             </div>
                
@@ -87,7 +82,7 @@ function Main() {
       <h3>Mensagem</h3>
     </div>
     <div className='message textMessage'>
-<div><p className='messagePic'></p></div>
+<div><img  id="gitImage" className='messagePic' src="https://avatars.githubusercontent.com/u/102992996?v=4" alt="Imagem de perfil" /></div>
       
 
       <p>
