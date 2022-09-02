@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import './styles/main.css'
 
 function Main() {
-  const url = 'https://api.github.com/users/suptitzgabriel'
-  const repoUrl = 'https://api.github.com/users/SuptitzGabriel/repos'
+  const url = 'https://api.github.com/users/gabrielsupz'
+  const repoUrl = 'https://api.github.com/users/gabrielsupz/repos'
   const [user, setUser] = useState({ name: '', avatar: '' })
   const [repositorys, setRepositorys] = useState([])
   const [repo1, setRepos1] = useState([])
@@ -169,7 +169,7 @@ function Main() {
     <main>
       <div className="myProject">
         <h3>My Projects</h3>
-        <a href="https://github.com/SuptitzGabriel" target="blank">
+        <a href="https://github.com/gabrielsupz" target="blank">
           Veja todos
         </a>
       </div>

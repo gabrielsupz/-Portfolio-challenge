@@ -5,7 +5,7 @@ function Aside() {
   const [user, setUser] = useState({ name: '', avatar: '' })
 
   useEffect(() => {
-    fetch('https://api.github.com/users/suptitzgabriel')
+    fetch('https://api.github.com/users/gabrielsupz')
       .then(response => response.json())
       .then(data => {
         setUser({
@@ -49,7 +49,7 @@ function Aside() {
           </li>
           <li>
             <img src="../public/assets/github.svg" alt="Ícon github" />
-            <a href="https://github.com/SuptitzGabriel">SuptitzGabriel</a>{' '}
+            <a href="https://github.com/gabrielsupz">gabrielsupz</a>{' '}
           </li>
           <li>
             <img src="../public/assets/instagram.svg" alt="Ícon instagram" />
