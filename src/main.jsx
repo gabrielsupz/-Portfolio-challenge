@@ -3,7 +3,7 @@ import './styles/main.css'
 import Repo from './components/repo/repo'
 
 function Main({ user }) {
-  const repoUrl = `https://api.github.com/users/uesleisuptitz/repos`
+  const repoUrl = `https://api.github.com/users/gabrielsupz/repos`
   const [repositorys, setRepositorys] = useState([])
 
   useEffect(() => {
