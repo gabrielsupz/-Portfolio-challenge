@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// kebab-case-case
+// camelCaseCaseCase
+// snake_case_case
+
 // div.projects div.project
 // div.projects div.header
 // div.projects div.footer h1.my-title
