@@ -6,18 +6,13 @@ import styled from "styled-components";
 
 // export const Projects = styled.div`
 //   .project{
-
 //   }
-
 //   .header{
-
 //   }
 //   .footer{
 //     h1.my-title {
-
 //     }
 //     #test{
-
 //     }
 //   }
 // `
