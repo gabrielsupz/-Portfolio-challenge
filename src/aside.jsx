@@ -1,19 +1,7 @@
 import { useState, useEffect } from 'react'
 import './styles/aside.css'
 
-function Aside() {
-  const [user, setUser] = useState({ name: '', avatar: '' })
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/gabrielsupz')
-      .then(response => response.json())
-      .then(data => {
-        setUser({
-          name: data.name,
-          avatar: data.avatar_url
-        })
-      })
-  }, [])
+function Aside({ user }) {
   return (
     <aside>
       <div className="profile">
