@@ -1,6 +1,27 @@
 import styled from "styled-components";
 
 // div.projects div.project
+// div.projects div.header
+// div.projects div.footer h1.my-title
+
+// export const Projects = styled.div`
+//   .project{
+
+//   }
+
+//   .header{
+
+//   }
+//   .footer{
+//     h1.my-title {
+
+//     }
+//     #test{
+
+//     }
+//   }
+// `
+
 export const RepoContainer = styled.div`
   width: 45.1rem;
   height: 18.6rem;
@@ -11,6 +32,7 @@ export const RepoContainer = styled.div`
     width: 2rem;
     height: 2rem;
   }
+
   p {
     font-weight: 400;
     font-size: 1.4rem;
