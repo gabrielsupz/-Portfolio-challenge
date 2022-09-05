@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -69,18 +69,7 @@ main div.projects {
   background-color: var(--body-bg-color);
   margin-bottom: 3rem;
 }
-div.projects div.project {
-  width: 45.1rem;
-  height: 18.6rem;
-  flex-direction: column;
-  background-color: var(--bg-cards);
-  padding: 3rem;
-}
 
-div.projects div.project img {
-  width: 2rem;
-  height: 2rem;
-}
 div.nameProject {
   align-items: center;
 }
@@ -100,19 +89,6 @@ div.project a {
 div.project a:hover {
   transition: 0.5s;
   background-color: #383647;
-}
-
-div.projects div.projectOne {
-  margin-right: 3rem;
-}
-div.projects div.project div.nameProject {
-  gap: 1.7rem;
-  margin-bottom: 2rem;
-}
-
-div.projects div.project p {
-  font-weight: 400;
-  font-size: 1.4rem;
 }
 
 div.infoProject {

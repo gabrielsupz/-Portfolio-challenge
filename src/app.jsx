@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Aside from "./aside";
 import Main from "./main";
+import { ThemeProvider } from "styled-components";
 
 const App = () => {
   const [user, setUser] = useState({ name: "", avatar: "" });
@@ -16,11 +17,17 @@ const App = () => {
       });
   }, []);
 
+  const theme = {
+    test: "red",
+  };
+
   return (
-    <div className="page">
-      <Aside user={user} />
-      <Main user={user} />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="page">
+        <Aside user={user} />
+        <Main user={user} />
+      </div>
+    </ThemeProvider>
   );
 };
 

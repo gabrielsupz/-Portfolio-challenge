@@ -1,22 +1,24 @@
 import React from "react";
+import * as S from "./styled";
 
 const Repo = ({ data }) => {
   return (
-    <div className="project projectOne">
-      <div className="nameProject">
+    <S.RepoContainer>
+      <S.NameProject>
         <img src="../public/assets/folder.svg" alt="Ícon Folder" />
         <a href={data.link} target="blank">
           {data.name}
         </a>
-      </div>
+      </S.NameProject>
+
       <p>{`${data.description}...`}</p>
       <div>
         <div className="infoProject">
           <div className="infoGitHub">
-            <div>
+            <S.StartContainer star={data.star}>
               <img src="../public/assets/star-project.svg" alt="Ícon Star" />
               <p>{data.star}</p>
-            </div>
+            </S.StartContainer>
             <div>
               <svg
                 aria-hidden="true"
@@ -44,7 +46,7 @@ const Repo = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </S.RepoContainer>
   );
 };
 
