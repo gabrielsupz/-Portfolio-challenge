@@ -1,19 +1,7 @@
-import { useState, useEffect } from 'react'
-import './styles/aside.css'
+import { useState, useEffect } from "react";
+import "./styles/aside.css";
 
-function Aside() {
-  const [user, setUser] = useState({ name: '', avatar: '' })
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/gabrielsupz')
-      .then(response => response.json())
-      .then(data => {
-        setUser({
-          name: data.name,
-          avatar: data.avatar_url
-        })
-      })
-  }, [])
+function Aside({ user }) {
   return (
     <aside>
       <div className="profile">
@@ -29,27 +17,27 @@ function Aside() {
       <div className="contact">
         <ul>
           <li id="contactFrase">
-            {' '}
+            {" "}
             <img src="../public/assets/star.svg" alt="Ícon star" />
             <p>Contato</p>
           </li>
           <li>
-            {' '}
-            <img src="../public/assets/map-pin.svg" alt="Ícon map" />{' '}
+            {" "}
+            <img src="../public/assets/map-pin.svg" alt="Ícon map" />{" "}
             <a href="https://goo.gl/maps/afDMc9DMK3PzCMoB8">
               Sapiranga do RS, Brasil
-            </a>{' '}
+            </a>{" "}
           </li>
 
           <li>
             <img src="../public/assets/linkedin.svg" alt="Ícon linkedin" />
             <a href="https://www.linkedin.com/in/gabriel-suptitz-51340124a/">
-              Gabriel Suptitz{' '}
-            </a>{' '}
+              Gabriel Suptitz{" "}
+            </a>{" "}
           </li>
           <li>
             <img src="../public/assets/github.svg" alt="Ícon github" />
-            <a href="https://github.com/gabrielsupz">gabrielsupz</a>{' '}
+            <a href="https://github.com/gabrielsupz">gabrielsupz</a>{" "}
           </li>
           <li>
             <img src="../public/assets/instagram.svg" alt="Ícon instagram" />
@@ -133,7 +121,7 @@ function Aside() {
         </div>
       </div>
     </aside>
-  )
+  );
 }
 
-export default Aside
+export default Aside;
