@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 import React from 'react'
-import Aside from './aside'
-import Main from './main'
+import Aside from './pieces/aside/aside'
+import Main from './pieces/main/main'
 
 const App = () => {
   const url = 'https://api.github.com/users/gabrielsupz'

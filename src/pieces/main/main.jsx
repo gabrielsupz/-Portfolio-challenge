@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import './styles/main.css'
-import Repo from './components/repo/repo'
+
+import Repo from '../../components/repo/repo'
+import * as S from './styled.js'
 
 function Main({ user }) {
   const repoUrl = `https://api.github.com/users/gabrielsupz/repos`
@@ -24,13 +25,13 @@ function Main({ user }) {
   })
 
   return (
-    <main>
-      <div className="myProject">
+    <S.Main>
+      <S.MyProject>
         <h3>My Projects</h3>
         <a href="https://github.com/gabrielsupz" target="blank">
           Veja todos
         </a>
-      </div>
+      </S.MyProject>
       <div className="projects">
         <div>
           <Repo data={repositorys[0] ? parseRepo(repositorys[0]) : {}} />
@@ -38,10 +39,10 @@ function Main({ user }) {
           <div></div>
         </div>
       </div>
-      <div className="message">
+      <S.Message>
         <h3>Mensagem</h3>
-      </div>
-      <div className="message textMessage">
+      </S.Message>
+      <S.TextMessage>
         <div>
           <img
             id="gitImage"
@@ -60,8 +61,8 @@ function Main({ user }) {
           portifólio feito com base no desafio do discover da Rocketseat,mas com
           algumas preferências próprias!
         </p>
-      </div>
-    </main>
+      </S.TextMessage>
+    </S.Main>
   )
 }
 

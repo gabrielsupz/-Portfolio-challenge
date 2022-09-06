@@ -1,20 +1,16 @@
 import { useState, useEffect } from 'react'
-import './styles/aside.css'
+
+import * as S from './styled.js'
 
 function Aside({ user }) {
   return (
-    <aside>
-      <div className="profile">
-        <img
-          id="gitImage"
-          className="profilePic"
-          src={user.avatar}
-          alt="Imagem de perfil"
-        />
+    <S.Aside>
+      <S.ProfileDiv>
+        <img src={user.avatar} alt="Imagem de perfil" />
         <h1>{user.name}</h1>
         <h2>Novice Developer</h2>
-      </div>
-      <div className="contact">
+      </S.ProfileDiv>
+      <S.ContactDiv>
         <ul>
           <li id="contactFrase">
             {' '}
@@ -50,8 +46,8 @@ function Aside({ user }) {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="tec">
+      </S.ContactDiv>
+      <S.TecDiv>
         <h3>Tecnologias</h3>
         <div className="technologies">
           <a
@@ -90,22 +86,22 @@ function Aside({ user }) {
             NODEJS
           </a>
         </div>
-      </div>
-      <div className="exp">
+      </S.TecDiv>
+      <S.ExpAndEducDiv>
         <h3>Experiência</h3>
         <div>
           <ul>
             <li>
               <strong className="topic">Mared Têxtil</strong>
-              <ul className="infoLi">
+              <ul>
                 <li>2021-2022</li>
                 <li>Auxiliar de estoque.</li>
               </ul>
             </li>
           </ul>
         </div>
-      </div>
-      <div className="education">
+      </S.ExpAndEducDiv>
+      <S.ExpAndEducDiv>
         <h3>Educação</h3>
         <div>
           <ul>
@@ -119,8 +115,8 @@ function Aside({ user }) {
             </li>
           </ul>
         </div>
-      </div>
-    </aside>
+      </S.ExpAndEducDiv>
+    </S.Aside>
   )
 }
 

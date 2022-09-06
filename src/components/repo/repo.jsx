@@ -1,15 +1,15 @@
-import ReactDom from 'react'
 import React from 'react'
+import * as S from './styled.js'
 
 const Repo = ({ data }) => {
   return (
-    <div className="project projectOne">
-      <div className="nameProject">
+    <S.RepoContainer>
+      <S.NameProject>
         <img src="../public/assets/folder.svg" alt="Ícon Folder" />
         <a href={data.link} target="blank">
           {data.name}
         </a>
-      </div>
+      </S.NameProject>
       <p>{`${data.description}...`}</p>
       <div>
         <div className="infoProject">
@@ -44,7 +44,7 @@ const Repo = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </S.RepoContainer>
   )
 }
 
