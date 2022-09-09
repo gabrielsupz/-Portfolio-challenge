@@ -1,11 +1,35 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div#projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  @media screen and (max-width: 929px) {
+    div#projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    div.infoProject {
+      display: flexbox;
+      gap: 2rem;
+    }
+  }
+
   div {
     color: var(--text-color);
     display: flex;
 
-    border-radius: 20px;
+    border-radius: 2rem;
   }
 
   div h3 {
@@ -19,7 +43,9 @@ export const Main = styled.main`
     justify-content: space-between;
   }
   div.projects {
+    width: 95%;
     display: flex;
+    gap: 4rem;
     background-color: var(--body-bg-color);
     margin-bottom: 3rem;
   }
@@ -27,7 +53,7 @@ export const Main = styled.main`
     margin-top: 3rem;
     margin-bottom: 3rem;
     justify-content: space-between;
-    width: 45.1rem;
+    width: 100%;
   }
 
   div.infoGitHub {
@@ -40,7 +66,7 @@ export const Main = styled.main`
 
   div.projectTec {
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
   }
   p.elipseCSS {
     width: 1.5rem;
@@ -69,8 +95,15 @@ export const Main = styled.main`
 `
 
 export const MyProject = styled.div`
-  margin: 4rem 4rem 3rem 0;
-  width: 94.2rem;
+  @media screen and (max-width: 425px) {
+    max-width: 35rem;
+
+    width: 100%;
+  }
+
+  margin-right: 0;
+  margin-bottom: 2rem;
+  width: 95%;
   height: 8.6rem;
 
   align-items: center;
@@ -97,14 +130,34 @@ export const MyProject = styled.div`
   }
 `
 export const Message = styled.div`
+  @media screen and (max-width: 425px) {
+    max-width: 35rem;
+
+    width: 100%;
+  }
   background-color: var(--bg-cards);
-  width: 94.2rem;
+  width: 95%;
   height: 8.6rem;
   margin-bottom: 3rem;
 `
 export const TextMessage = styled.div`
+  @media screen and (max-width: 425px) {
+    margin: 0 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 35rem;
+
+    width: 100%;
+  }
+  @media screen and (max-width: 929px) {
+    width: 95%;
+    height: auto;
+    margin: 0 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
   background-color: var(--bg-cards);
-  width: 94.2rem;
+  width: 95%;
   height: 20.1rem;
   padding: 3rem;
   gap: 2rem;

@@ -26,18 +26,15 @@ function Main({ user }) {
 
   return (
     <S.Main>
-      <S.MyProject>
+      <S.MyProject id="myProject">
         <h3>My Projects</h3>
         <a href="https://github.com/gabrielsupz" target="blank">
           Veja todos
         </a>
       </S.MyProject>
-      <div className="projects">
-        <div>
-          <Repo data={repositorys[0] ? parseRepo(repositorys[0]) : {}} />
-          <Repo data={repositorys[1] ? parseRepo(repositorys[1]) : {}} />
-          <div></div>
-        </div>
+      <div id="projects" className="projects">
+        <Repo data={repositorys[0] ? parseRepo(repositorys[0]) : {}} />
+        <Repo data={repositorys[1] ? parseRepo(repositorys[1]) : {}} />
       </div>
       <S.Message>
         <h3>Mensagem</h3>

@@ -1,13 +1,19 @@
 import styled from 'styled-components'
 
 export const RepoContainer = styled.div`
-  width: 45.1rem;
+  @media screen and (max-width: 425px) {
+    max-width: 100%;
+    width: 30rem;
+  }
+  @media screen and (max-width: 929px) {
+    width: auto;
+    height: auto;
+  }
+  width: 47.5%;
   height: 18.6rem;
   flex-direction: column;
   background-color: var(--bg-cards);
   padding: 3rem;
-
-  margin-right: 3rem;
 
   img {
     width: 2rem;

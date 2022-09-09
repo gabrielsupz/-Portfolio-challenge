@@ -1,16 +1,23 @@
 import styled from 'styled-components'
 
 export const Aside = styled.aside`
-  width: auto;
+  @media screen and (max-width: 425px) {
+    display: contents;
+    flex-direction: column;
+
+    background-color: var(--body-bg-color);
+  }
+
   div {
-    width: 30rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
+    max-width: 35rem;
+    width: 100%;
+
     color: var(--text-color);
     background-color: var(--bg-cards);
     display: flex;
     border-radius: 7%;
+
+    margin-bottom: 3rem;
   }
   div h3 {
     font-size: 2rem;
@@ -19,7 +26,6 @@ export const Aside = styled.aside`
   }
 `
 export const ProfileDiv = styled.div`
-  margin-top: 4rem;
   align-items: center;
   flex-direction: column;
 
@@ -54,7 +60,7 @@ export const ContactDiv = styled.div`
     color: var(--text-color);
   }
   ul {
-    margin: 3rem auto 0 4rem;
+    margin: 2rem 2rem 0 2rem;
     align-items: center;
     list-style: none;
   }
@@ -78,18 +84,18 @@ export const ContactDiv = styled.div`
 export const TecDiv = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 34.8rem;
+  max-width: 100%;
   height: 20.8rem;
   h3 {
     margin-bottom: 0.5rem;
   }
   div.technologies {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-area: auto;
     margin: 0;
     align-items: center;
-    padding-left: 1rem;
+    padding-left: 2rem;
     color: var(--body-bg-color);
     margin-left: 0;
 
@@ -117,6 +123,16 @@ export const TecDiv = styled.div`
     margin-top: 1.5rem;
     color: black;
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 768px) {
+    div {
+      margin: 0;
+    }
+    div.technologies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-area: auto;
+    }
   }
 `
 export const ExpAndEducDiv = styled.div`
